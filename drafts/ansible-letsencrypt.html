@@ -2,7 +2,7 @@
 <html lang="fr"
 >
 <head>
-    <title>Tags - christopheleroux.github.io</title>
+    <title>Gestion des certificats letsencrypt avec ansible - christopheleroux.github.io</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,22 @@
 
 
 
+<link rel="canonical" href="/drafts/ansible-letsencrypt.html">
 
         <meta name="author" content="christophe Le Roux" />
+        <meta name="keywords" content="ansible,letsencrypt" />
+        <meta name="description" content="Gestion de certifcat letsencrypt avec outil d&#39;admin letsencrypt...." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="christopheleroux.github.io" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="christopheleroux.github.io"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="christopheleroux.github.io"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Gestion des certificats letsencrypt avec ansible"/>
+        <meta property="og:url" content="/drafts/ansible-letsencrypt.html"/>
+        <meta property="og:description" content="Gestion de certifcat letsencrypt avec outil d&#39;admin letsencrypt...."/>
+        <meta property="article:published_time" content="2016-03-13" />
+            <meta property="article:section" content="ansible" />
+            <meta property="article:tag" content="ansible" />
+            <meta property="article:tag" content="letsencrypt" />
+            <meta property="article:author" content="christophe Le Roux" />
 
 
     <!-- Bootstrap -->
@@ -60,11 +67,53 @@ christopheleroux.github.io            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="tags">
-        <h1>Tags for christopheleroux.github.io</h1>
-        <div class="panel-group" id="accordion">        </div>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/drafts/ansible-letsencrypt.html"
+                       rel="bookmark"
+                       title="Permalink to Gestion des certificats letsencrypt avec ansible">
+                        Gestion des certificats letsencrypt avec ansible
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-03-13T10:20:00+01:00"> dim. 13 mars 2016</time>
+    </span>
 
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/ansible.html">ansible</a>
+        /
+	<a href="/tag/letsencrypt.html">letsencrypt</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Ca fait pres de 6 mois que je m'intéresse à ansible. Faute de temps, je n'ai pu m'y pencher sérieusement que récemment et je dois dire que je ne suis pas décu.</p>
+<p>Pour remattre le contexte : Ansible est un système de gestion de conf assez récent (???) développé par Red Hat. La version 2.0 est sortie récemment.
+Le gros avantage que j'y voit est son coté non contraingnant. Les cibles doivent seulement etre accessibles par ssh.
+env hétérogène, idempotence ....</p>
+<p>Plus de détails par ici : liens ansible etc ....</p>
+<p>Après quelques tests d'utilisation je constate un gain rapide et ce pour un nombre de machines à administrer réduit.
+En creusant le logiciel je pourrais dire que le gain en terme d'administration est comparable a celui que j'ai ressenti pour la gestion du code en passant de subversion a git.</p>
+<p>Letsencrypt :</p>
+<p>Depuis nov 2015, lets encrypt a bousculé le monde de autorités de certification en proposant des certificats gratuits la ou le tarif de base est d'environ XX €. Je ne suis pas suffisement renseigné pour comparer la qualité mais cela a le mérite de démocratiser l'utilisation du certifcat ssl</p>
+<p>Au niveau gestion, le gain est également évidant : 1 commande pour créer automatiquement etc ...</p>
+<h1>Les playbooks :</h1>
+<h2>création de cert</h2>
+<h2>Mise a jour des cerificats existants</h2>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
